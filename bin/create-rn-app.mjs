@@ -89,12 +89,6 @@ try {
 
   fs.writeFileSync('App.tsx', AppTemplate);
 
-  if (cli !== 'Expo') {
-    process.chdir('ios');
-    await execAsync('bundle install');
-    await execAsync('bundle exec pod install');
-  }
-
   spinner.succeed(`Project "${projectName}" generated successfully!`);
 } catch (error) {
   spinner.fail(`${error}`);
