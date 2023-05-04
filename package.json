@@ -1,0 +1,19 @@
+{
+  "name": "create-rn-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/create-rn-app.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create-rn-app": "./bin/create-rn-app.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "9.2.0",
+    "ora": "^6.3.0"
+  },
+  "type": "module"
+}
